@@ -23,14 +23,14 @@ pip install -r requirements.txt
 
 The code also requires PyTorch, CUDA, and `pointnet2_ops`. Please install the versions compatible with your CUDA environment.
 
-## VoD Checkpoint and Dataset
+## Checkpoints and Datasets
 
-For the anonymous review stage, we provide the pretrained checkpoint and preprocessed dataset for the VoD experiments:
+For the anonymous review stage, we provide the pretrained checkpoints and preprocessed datasets for the VoD and SC experiments:
 
-- [VoD checkpoint](https://pan.baidu.com/s/1vsFVfBvVqKTAN-RMqD41HQ?pwd=1234), extraction code: `1234`
-- [VoD preprocessed dataset](https://pan.baidu.com/s/1pM-dVXleM2u2t01UXjKz8Q?pwd=1234), extraction code: `1234`
+- [Checkpoints](https://pan.baidu.com/s/1vsFVfBvVqKTAN-RMqD41HQ?pwd=1234), extraction code: `1234`
+- [Preprocessed datasets](https://pan.baidu.com/s/1pM-dVXleM2u2t01UXjKz8Q?pwd=1234), extraction code: `1234`
 
-Additional resources will be released after the review process. After downloading, update `dataset_path` and `model_path` in `configs.yaml` according to your local paths.
+After downloading, update `dataset_path` and `model_path` in `configs.yaml` according to your local paths.
 
 ## Data Format
 
@@ -68,6 +68,20 @@ The best checkpoint is saved to:
 
 ```text
 checkpoints/pgsm_net/models/model.best.t7
+```
+
+For VoD experiments, use:
+
+```yaml
+dataset: vodClipDatasetOdm
+split_path: splits/vod_odometry_split_info.yaml
+```
+
+For SC experiments, use:
+
+```yaml
+dataset: scClipDatasetOdm
+split_path: splits/sc_odometry_split_info.yaml
 ```
 
 ## Evaluation
