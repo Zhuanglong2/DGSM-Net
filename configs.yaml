@@ -1,0 +1,28 @@
+exp_name: pgsm_net
+
+# Dataset
+dataset: vodClipDatasetOdm
+dataset_path: /path/to/preprocessed/odm_smp
+split_path: splits/vod_odometry_split_info.yaml
+calib_path: dataset/vod_radar_calib.txt
+train_set: train
+eval_split: test
+num_points: 256
+mini_clip_len: 5
+update_len: 5
+
+# Optimization
+batch_size: 16
+val_batch_size: 1
+epochs: 60
+lr: 0.001
+decay_epochs: 1
+decay_rate: 0.9
+seed: 1234
+num_workers: 8
+cuda_device: '0'
+
+# Checkpoint / mode
+eval: False
+load_checkpoint: False
+model_path: ''

@@ -1,0 +1,4 @@
+train: ['delft_2','delft_3','delft_7','delft_8','delft_11','delft_13','delft_10','delft_22',
+      'delft_16','delft_18','delft_20','delft_21','delft_25','delft_12','delft_19','delft_24','delft_26']
+val: ['delft_1','delft_4','delft_6','delft_9', 'delft_14','delft_23', 'delft_27']
+test: ['delft_1','delft_4','delft_6','delft_9', 'delft_14','delft_23', 'delft_27']
