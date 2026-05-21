@@ -1,6 +1,6 @@
 # PGSM-Net
 
-This repository contains a clean release version of PGSM-Net for 4D radar odometry. It keeps only the proposed model and the minimal training/evaluation pipeline used for the paper experiments.
+This is the official repository of PGSM-Net for 4D radar odometry.
 
 ## What Is Included
 
