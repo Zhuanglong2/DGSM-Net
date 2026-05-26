@@ -1,4 +1,4 @@
-exp_name: pgsm_net
+exp_name: dgsm_net
 
 # Dataset
 dataset: vodClipDatasetOdm

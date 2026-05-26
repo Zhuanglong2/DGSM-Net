@@ -12,7 +12,7 @@ from tensorboardX import SummaryWriter
 
 from dataset import dataset_dict
 from engine import test_one_epoch_seq, train_one_epoch_seq
-from models import PGSMNet
+from models import DGSMNet
 from utils import parse_args_from_yaml
 
 
@@ -35,7 +35,7 @@ def prepare_dirs(args):
 
 
 def init_model(args):
-    net = PGSMNet(args).cuda()
+    net = DGSMNet(args).cuda()
     if args.eval or args.load_checkpoint:
         model_path = args.model_path or f"checkpoints/{args.exp_name}/models/model.best.t7"
         print(model_path)
@@ -129,7 +129,7 @@ def run(cli_args):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="PGSM-Net training/evaluation")
+    parser = argparse.ArgumentParser(description="DGSM-Net training/evaluation")
     parser.add_argument("--config", type=str, default="configs.yaml")
     parser.add_argument("--eval", action="store_true")
     run(parser.parse_args())

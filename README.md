@@ -1,10 +1,10 @@
-# PGSM-Net
+# DGSM-Net
 
-This is the official repository of PGSM-Net for 4D radar odometry.
+This is the official repository of DGSM-Net for 4D radar odometry.
 
 ## What Is Included
 
-- `models/pgsm_net.py`: PGSM-Net model.
+- `models/dgsm_net.py`: DGSM-Net model implementation.
 - `dataset/vod_clip_odm.py`: dataset loader for preprocessed odometry samples.
 - `losses/radar_loss.py`: odometry loss.
 - `engine.py` and `main.py`: training and evaluation loops.
@@ -67,7 +67,7 @@ python main.py --config configs.yaml
 The best checkpoint is saved to:
 
 ```text
-checkpoints/pgsm_net/models/model.best.t7
+checkpoints/dgsm_net/models/model.best.t7
 ```
 
 For VoD experiments, use:
